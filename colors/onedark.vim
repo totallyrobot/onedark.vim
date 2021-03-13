@@ -110,7 +110,7 @@ function! s:h(group, style, ...)
     \ "guisp="   (has_key(s:highlight, "sp")    ? s:highlight.sp.gui   : "NONE")
     \ "gui="     (has_key(s:highlight, "gui")   ? s:highlight.gui      : "NONE")
     \ "ctermfg=" . l:ctermfg
-    \ "ctermbg=" cleared
+    \ "ctermbg=" "NONE"
     \ "cterm="   (has_key(s:highlight, "cterm") ? s:highlight.cterm    : "NONE")
 endfunction
 
