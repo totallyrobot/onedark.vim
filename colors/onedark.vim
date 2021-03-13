@@ -101,7 +101,7 @@ function! s:h(group, style, ...)
     let l:ctermbg = (has_key(s:highlight, "bg") ? s:highlight.bg.cterm16 : "NONE")
   else
     let l:ctermfg = (has_key(s:highlight, "fg") ? s:highlight.fg.cterm : "NONE")
-    " let l:ctermbg = (has_key(s:highlight, "bg") ? s:highlight.bg.cterm : "NONE")
+    let l:ctermbg = (has_key(s:highlight, "bg") ? s:highlight.bg.cterm : "NONE")
   endif
 
   execute "highlight" a:group
@@ -110,7 +110,7 @@ function! s:h(group, style, ...)
     \ "guisp="   (has_key(s:highlight, "sp")    ? s:highlight.sp.gui   : "NONE")
     \ "gui="     (has_key(s:highlight, "gui")   ? s:highlight.gui      : "NONE")
     \ "ctermfg=" . l:ctermfg
-    \ "ctermbg=" . l:ctermbg
+    \ "ctermbg=" . cleared
     \ "cterm="   (has_key(s:highlight, "cterm") ? s:highlight.cterm    : "NONE")
 endfunction
 
