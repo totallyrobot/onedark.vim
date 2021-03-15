@@ -640,7 +640,7 @@ if has("nvim")
 endif
 
 "" coc.nvim
-hi CocFloating ctermbg=109 guifg=#83a598
+call s:h("CocFloating", {"fg": s:white})
 
 " }}}
 
