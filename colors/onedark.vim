@@ -349,7 +349,7 @@ call s:h("jsDocParam", { "fg": s:blue })
 call s:h("jsDocTags", { "fg": s:purple })
 call s:h("jsExport", { "fg": s:purple })
 call s:h("jsExportDefault", { "fg": s:purple })
-call s:h("jsExtendsKeyword", { "fg": s:purple })
+call s:h("jsExtendsKeyword", {efault（or $HOME/.vim for vim). Run the command :CocConfig to open your user configuration file. "fg": s:purple })
 call s:h("jsFrom", { "fg": s:purple })
 call s:h("jsFuncCall", { "fg": s:blue })
 call s:h("jsFunction", { "fg": s:purple })
@@ -638,6 +638,9 @@ if has("nvim")
   call s:h("LspDiagnosticsUnderlineHint", { "fg": s:comment_grey, "gui": "underline", "cterm": "underline" })
 " }}}
 endif
+
+"" coc.nvim
+hi CocFloating ctermbg=109 guifg=#83a598
 
 " }}}
 
